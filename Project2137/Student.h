@@ -14,6 +14,8 @@ public:
 	Student(int id, std::string name, std::string surname, Date birthDate, Gender gender, std::string pesel, std::string nationality);
 	Student() = default;
 	int GetId() const;
+	const std::string& GetPesel() const;
+	bool operator==(const Student& student) const;
 private:
 	int m_id = 0;
 	std::string m_name;

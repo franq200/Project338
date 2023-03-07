@@ -9,3 +9,13 @@ int Student::GetId() const
 {
 	return m_id;
 }
+
+const std::string& Student::GetPesel() const
+{
+	return m_pesel;
+}
+
+bool Student::operator==(const Student& student) const
+{
+	return student.GetId() == m_id;
+}

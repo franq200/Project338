@@ -23,3 +23,12 @@ void StudentBase::DeleteStudent(int id)
 		throw std::exception("nie ma studenta z takim id");
 	}
 }
+
+Student StudentBase::SearchStudent(const std::string& pesel) const
+{
+	if (const auto result = std::find_if(m_students.begin(), m_students.end(), [&pesel](const auto& el) {return el.GetPesel() == pesel; }); result != m_students.end())
+	{
+		return *result;
+	}
+	throw std::exception("nie ma studenta z takim peselem");
+}

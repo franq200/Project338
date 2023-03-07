@@ -31,8 +31,5 @@ Student
 
 Zad.dom
 
-1. AddStudent powinien mieæ argumenty wype³niaj¹ce dane studenta.
-2. Zapewni³, ¿e ka¿dy student ma unikalne ID (nie powtarza siê ID).
-3. Doda³ usuwanie studenta (nie po indeksie (pozycji w wektorze)). (zawsze tylko jeden konkretny student)
 
 */
